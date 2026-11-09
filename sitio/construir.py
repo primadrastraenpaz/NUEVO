@@ -46,7 +46,7 @@ PIE = """<footer class="pie">
   <div class="contenedor">
     <div>
       <a class="marca" href="/">Pri <span>dos Santos</span></a>
-      <p>Educadora de familias, divulgadora y presidenta de ASTRAS. Fundadora de la comunidad Madrastra en Paz.</p>
+      <p>Comunico, divulgo y acompaño a madrastras y familias ensambladas. Fundadora de Madrastra en Paz y presidenta de ASTRAS.</p>
     </div>
     <div>
       <h3>Trabajo</h3>
@@ -128,10 +128,10 @@ PERSONA = """<script type="application/ld+json">
       "alternateName": "Priscila dos Santos",
       "url": "https://www.somosmadrastras.com/",
       "image": "https://www.somosmadrastras.com/assets/img/pri.webp",
-      "jobTitle": "Educadora de familias en Disciplina Positiva y divulgadora",
+      "jobTitle": "Comunicadora y divulgadora sobre madrastras y familias ensambladas",
       "description": "Fundadora de la comunidad Madrastra en Paz, presidenta de ASTRAS y conferenciante sobre madrastras y familias ensambladas.",
       "memberOf": { "@type": "Organization", "name": "ASTRAS", "url": "https://asociacionastras.org/" },
-      "knowsAbout": ["Madrastras", "Familias ensambladas", "Inteligencia emocional", "Disciplina positiva", "Comunicación no violenta"],
+      "knowsAbout": ["Madrastras", "Familias ensambladas", "Comunicación no violenta", "Inteligencia emocional", "Crianza respetuosa"],
       "sameAs": [
         "https://www.instagram.com/somos.madrastras.es/",
         "https://www.youtube.com/@prisciladossantos1779",

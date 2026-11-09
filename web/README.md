@@ -1,21 +1,27 @@
-# somosmadrastras.com (nueva web)
+# somosmadrastras.com · web personal de Pri dos Santos
 
-Web estática (HTML y CSS, sin WordPress) con la identidad visual de Madrastra en Paz, preparada para Vercel.
+Web estática (HTML y CSS, sin WordPress) preparada para Vercel. Fase 1: se mantiene el dominio somosmadrastras.com y todas las URL que Google ya tiene indexadas.
 
-## Páginas
-- `/` inicio: comunidad, sobre mí, pilares, acompañamiento, libros, podcast, prensa, newsletter
-- `/acompanamiento` sesiones individuales, parejas y testimonios
-- `/newsletter` formulario de Substack
-- `/aviso-legal`, `/politica-privacidad`, `/politica-de-cookies`
+## Cómo se edita
+Los textos de cada página están en `sitio/paginas/*.html`. Después de cambiar algo:
 
-`vercel.json` redirige las direcciones antiguas de WordPress (`/pilares/`, `/index.php/politica-privacidad/`, etc.).
+    python3 sitio/construir.py
+
+El generador escribe las páginas en `web/` con la cabecera, el pie, los metadatos SEO y el `sitemap.xml`. El menú y el pie se cambian en `sitio/construir.py`.
+
+## SEO
+- Se conservan las direcciones de WordPress, con barra final: `/`, `/acompanamiento/`, `/newsletter/`, `/politica-privacidad/`, `/politica-de-cookies/`.
+- `vercel.json` redirige de forma permanente `/pilares/` (a `/sobre-mi/#enfoque`), `/index.php/politica-privacidad/` y otras direcciones antiguas.
+- En Vercel, el dominio principal debe ser `www.somosmadrastras.com`, con `somosmadrastras.com` redirigiendo a él, igual que ahora.
 
 ## Pendiente antes de publicar
-Buscar `pendiente` en los archivos:
+Buscar `pendiente` en `sitio/paginas/`:
 - `#pendiente-skool`: enlace de la comunidad en Skool
+- `#pendiente-pareja-en-paz`: enlace de Pareja en Paz
+- `#pendiente-astras`: web de ASTRAS
 - `#pendiente-libro-divorcio`: enlace de "¿Qué es el divorcio?"
-- `#pendiente-pareja-en-paz`: enlace del acompañamiento en pareja
+- `#pendiente-correo`: correo de contacto
 - Datos legales (titular, NIF, domicilio, correo) en aviso legal y privacidad
 
 ## Vercel
-Importar el repositorio en Vercel con **Root Directory = `web`**, sin framework ni comando de build.
+Importar el repositorio con Root Directory = `web`, sin framework ni comando de build.

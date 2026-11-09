@@ -1,13 +1,13 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
+  "trailingSlash": true,
   "redirects": [
-    { "source": "/pilares", "destination": "/#pilares", "permanent": true },
-    { "source": "/index.php/politica-privacidad", "destination": "/politica-privacidad", "permanent": true },
-    { "source": "/mas-informacion-sobre-las-cookies", "destination": "/politica-de-cookies", "permanent": true },
-    { "source": "/hola-mundo", "destination": "/", "permanent": true },
-    { "source": "/feed", "destination": "/", "permanent": true },
-    { "source": "/comments/feed", "destination": "/", "permanent": true },
+    { "source": "/pilares/", "destination": "/sobre-mi/#enfoque", "permanent": true },
+    { "source": "/index.php/politica-privacidad/", "destination": "/politica-privacidad/", "permanent": true },
+    { "source": "/mas-informacion-sobre-las-cookies/", "destination": "/politica-de-cookies/", "permanent": true },
+    { "source": "/hola-mundo/", "destination": "/", "permanent": true },
+    { "source": "/feed/", "destination": "/", "permanent": true },
+    { "source": "/comments/feed/", "destination": "/", "permanent": true },
     { "source": "/wp-admin/:path*", "destination": "/", "permanent": false },
     { "source": "/wp-login.php", "destination": "/", "permanent": false }
   ],

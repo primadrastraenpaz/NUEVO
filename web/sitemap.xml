@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.somosmadrastras.com/</loc></url>
-  <url><loc>https://www.somosmadrastras.com/acompanamiento</loc></url>
-  <url><loc>https://www.somosmadrastras.com/newsletter</loc></url>
-  <url><loc>https://www.somosmadrastras.com/aviso-legal</loc></url>
-  <url><loc>https://www.somosmadrastras.com/politica-privacidad</loc></url>
-  <url><loc>https://www.somosmadrastras.com/politica-de-cookies</loc></url>
+  <url><loc>https://www.somosmadrastras.com/sobre-mi/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/madrastra-en-paz/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/acompanamiento/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/charlas/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/astras/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/divulgacion/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/prensa/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/contacto/</loc></url>
+  <url><loc>https://www.somosmadrastras.com/newsletter/</loc></url>
 </urlset>

@@ -100,6 +100,7 @@ PLANTILLA = """<!doctype html>
 <meta name="theme-color" content="#FEF9F3">
 <link rel="icon" href="/favicon.png">
 <link rel="preload" href="/assets/fonts/playfair-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/jost-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/css/estilos.css">
 {extra_head}</head>
 <body>

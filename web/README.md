@@ -16,12 +16,8 @@ El generador escribe las páginas en `web/` con la cabecera, el pie, los metadat
 
 ## Pendiente antes de publicar
 Buscar `pendiente` en `sitio/paginas/`:
-- `#pendiente-skool`: enlace de la comunidad en Skool
-- `#pendiente-pareja-en-paz`: enlace de Pareja en Paz
 - `#pendiente-astras`: web de ASTRAS
-- `#pendiente-libro-divorcio`: enlace de "¿Qué es el divorcio?"
-- `#pendiente-correo`: correo de contacto
-- Datos legales (titular, NIF, domicilio, correo) en aviso legal y privacidad
+- Datos legales (titular, NIF, domicilio) en aviso legal y privacidad
 
 ## Vercel
 Importar el repositorio con Root Directory = `web`, sin framework ni comando de build.

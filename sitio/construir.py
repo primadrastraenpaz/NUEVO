@@ -4,10 +4,10 @@
 Cada página empieza con un bloque de metadatos:
 
 <!--
-ruta: /acompanamiento/
-titulo: Acompañamiento para madrastras
+ruta: /charlas/
+titulo: Charlas y formación
 descripcion: ...
-menu: /acompanamiento/
+menu: /charlas/
 -->
 
 La ruta conserva la barra final de las direcciones de WordPress para no
@@ -20,7 +20,7 @@ import re
 RAIZ = pathlib.Path(__file__).resolve().parent
 WEB = RAIZ.parent / "web"
 DOMINIO = "https://www.somosmadrastras.com"
-SUFIJO = "Pri dos Santos · Somos Madrastras"
+SUFIJO = "Pri dos Santos"
 
 MENU = [
     ("/sobre-mi/", "Sobre mí"),
@@ -46,13 +46,12 @@ PIE = """<footer class="pie">
   <div class="contenedor">
     <div>
       <a class="marca" href="/">Pri <span>dos Santos</span></a>
-      <p>Educadora de familias, divulgadora y presidenta de ASTRAS. Fundadora de Somos Madrastras y de la comunidad Madrastra en Paz.</p>
+      <p>Educadora de familias, divulgadora y presidenta de ASTRAS. Fundadora de la comunidad Madrastra en Paz.</p>
     </div>
     <div>
       <h3>Trabajo</h3>
       <ul>
         <li><a href="/madrastra-en-paz/">Madrastra en Paz</a></li>
-        <li><a href="/acompanamiento/">Acompañamiento</a></li>
         <li><a href="/charlas/">Charlas</a></li>
         <li><a href="/astras/">ASTRAS</a></li>
       </ul>
@@ -76,7 +75,7 @@ PIE = """<footer class="pie">
       </ul>
     </div>
     <div class="pie-final">
-      <span>© <span data-anio>2026</span> Pri dos Santos · Somos Madrastras</span>
+      <span>© <span data-anio>2026</span> Pri dos Santos</span>
       <span><a href="/aviso-legal/">Aviso legal</a> · <a href="/politica-privacidad/">Privacidad</a> · <a href="/politica-de-cookies/">Cookies</a></span>
     </div>
   </div>
@@ -92,7 +91,7 @@ PLANTILLA = """<!doctype html>
 <link rel="canonical" href="{url}">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
-<meta property="og:site_name" content="Somos Madrastras">
+<meta property="og:site_name" content="Pri dos Santos">
 <meta property="og:title" content="{titulo_completo}">
 <meta property="og:description" content="{descripcion}">
 <meta property="og:url" content="{url}">
@@ -130,7 +129,8 @@ PERSONA = """<script type="application/ld+json">
       "url": "https://www.somosmadrastras.com/",
       "image": "https://www.somosmadrastras.com/assets/img/pri.webp",
       "jobTitle": "Educadora de familias en Disciplina Positiva y divulgadora",
-      "description": "Fundadora de Somos Madrastras y de la comunidad Madrastra en Paz, presidenta de ASTRAS y conferenciante sobre madrastras y familias ensambladas.",
+      "description": "Fundadora de la comunidad Madrastra en Paz, presidenta de ASTRAS y conferenciante sobre madrastras y familias ensambladas.",
+      "memberOf": { "@type": "Organization", "name": "ASTRAS", "url": "https://asociacionastras.org/" },
       "knowsAbout": ["Madrastras", "Familias ensambladas", "Inteligencia emocional", "Disciplina positiva", "Comunicación no violenta"],
       "sameAs": [
         "https://www.instagram.com/somos.madrastras.es/",
@@ -142,7 +142,7 @@ PERSONA = """<script type="application/ld+json">
     {
       "@type": "WebSite",
       "@id": "https://www.somosmadrastras.com/#web",
-      "name": "Somos Madrastras",
+      "name": "Pri dos Santos",
       "url": "https://www.somosmadrastras.com/",
       "inLanguage": "es-ES",
       "publisher": { "@id": "https://www.somosmadrastras.com/#pri" }

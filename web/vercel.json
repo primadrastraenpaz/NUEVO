@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    { "source": "/acompanamiento/", "destination": "/madrastra-en-paz/", "permanent": true },
     { "source": "/pilares/", "destination": "/sobre-mi/#enfoque", "permanent": true },
     { "source": "/index.php/politica-privacidad/", "destination": "/politica-privacidad/", "permanent": true },
     { "source": "/mas-informacion-sobre-las-cookies/", "destination": "/politica-de-cookies/", "permanent": true },

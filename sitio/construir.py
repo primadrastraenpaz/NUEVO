@@ -68,8 +68,8 @@ PIE = """<footer class="pie">
     <div>
       <h3>Redes</h3>
       <ul>
-        <li><a href="https://www.instagram.com/somos.madrastras.es/" target="_blank" rel="noopener">Instagram</a></li>
-        <li><a href="https://www.youtube.com/@prisciladossantos1779" target="_blank" rel="noopener">YouTube</a></li>
+        <li><a href="https://www.instagram.com/pri.madrastraenpaz/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@pri.madrastraenpaz" target="_blank" rel="noopener">YouTube</a></li>
         <li><a href="https://open.spotify.com/show/601LgQSnyQIpU74ceh1kwN" target="_blank" rel="noopener">Spotify</a></li>
         <li><a href="https://www.facebook.com/people/Somos-Madrastras/100076445802468/" target="_blank" rel="noopener">Facebook</a></li>
       </ul>
@@ -95,7 +95,7 @@ PLANTILLA = """<!doctype html>
 <meta property="og:title" content="{titulo_completo}">
 <meta property="og:description" content="{descripcion}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{dominio}/assets/img/pri.webp">
+<meta property="og:image" content="{dominio}/assets/img/pri-portada.webp">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#FEF9F3">
 <link rel="icon" href="/favicon.png">
@@ -128,14 +128,14 @@ PERSONA = """<script type="application/ld+json">
       "name": "Pri dos Santos",
       "alternateName": "Priscila dos Santos",
       "url": "https://www.somosmadrastras.com/",
-      "image": "https://www.somosmadrastras.com/assets/img/pri.webp",
+      "image": "https://www.somosmadrastras.com/assets/img/pri-portada.webp",
       "jobTitle": "Comunicadora y divulgadora sobre madrastras y familias ensambladas",
       "description": "Fundadora de la comunidad Madrastra en Paz, presidenta de ASTRAS y conferenciante sobre madrastras y familias ensambladas.",
       "memberOf": { "@type": "Organization", "name": "ASTRAS", "url": "https://asociacionastras.org/" },
       "knowsAbout": ["Madrastras", "Familias ensambladas", "Comunicación no violenta", "Inteligencia emocional", "Crianza respetuosa"],
       "sameAs": [
-        "https://www.instagram.com/somos.madrastras.es/",
-        "https://www.youtube.com/@prisciladossantos1779",
+        "https://www.instagram.com/pri.madrastraenpaz/",
+        "https://www.youtube.com/@pri.madrastraenpaz",
         "https://open.spotify.com/show/601LgQSnyQIpU74ceh1kwN",
         "https://www.facebook.com/people/Somos-Madrastras/100076445802468/"
       ]

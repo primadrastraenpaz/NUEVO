@@ -16,7 +16,6 @@ El generador escribe las páginas en `web/` con la cabecera, el pie, los metadat
 
 ## Pendiente antes de publicar
 Buscar `pendiente` en `sitio/paginas/`:
-- `#pendiente-astras`: web de ASTRAS
 - Datos legales (titular, NIF, domicilio) en aviso legal y privacidad
 
 ## Vercel

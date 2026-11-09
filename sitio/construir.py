@@ -71,7 +71,6 @@ PIE = """<footer class="pie">
         <li><a href="https://www.instagram.com/pri.madrastraenpaz/" target="_blank" rel="noopener">Instagram</a></li>
         <li><a href="https://www.youtube.com/@pri.madrastraenpaz" target="_blank" rel="noopener">YouTube</a></li>
         <li><a href="https://open.spotify.com/show/601LgQSnyQIpU74ceh1kwN" target="_blank" rel="noopener">Spotify</a></li>
-        <li><a href="https://www.facebook.com/people/Somos-Madrastras/100076445802468/" target="_blank" rel="noopener">Facebook</a></li>
       </ul>
     </div>
     <div class="pie-final">
@@ -136,8 +135,7 @@ PERSONA = """<script type="application/ld+json">
       "sameAs": [
         "https://www.instagram.com/pri.madrastraenpaz/",
         "https://www.youtube.com/@pri.madrastraenpaz",
-        "https://open.spotify.com/show/601LgQSnyQIpU74ceh1kwN",
-        "https://www.facebook.com/people/Somos-Madrastras/100076445802468/"
+        "https://open.spotify.com/show/601LgQSnyQIpU74ceh1kwN"
       ]
     },
     {

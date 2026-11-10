@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pri y Alexa · Dosier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Jost:wght@400;500&family=Sacramento&family=Oswald:wght@400;500;600&family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #d9d4d0; }
+  .page {
+    width: 210mm; height: 297mm; margin: 10mm auto; overflow: hidden;
+    position: relative; display: grid;
+    box-shadow: 0 2px 18px rgba(0,0,0,.12);
+  }
+  @media print {
+    body { background: none; }
+    .page { margin: 0; box-shadow: none; page-break-after: always; break-after: page; }
+    .page:last-child { page-break-after: auto; break-after: auto; }
+  }
+  img { display: block; max-width: 100%; }
+
+  /* ============ PÁGINA 1 · PRI (Madrastra en Paz, ruta clásica) ============ */
+  .pri {
+    --crema:#FDF2E9; --lino:#FEF9F3; --arena:#F0DACE; --ciruela:#3F2030;
+    --noche:#241118; --vino:#7F2C2E; --granate:#741A3C; --nude:#E7A8A7;
+    background: var(--crema); color: var(--ciruela);
+    font-family: 'Jost', sans-serif; font-weight: 400;
+    grid-template-columns: 74mm 1fr;
+  }
+  .pri .lateral { background: var(--noche); color: var(--crema); display: flex; flex-direction: column; }
+  .pri .foto { height: 150mm; overflow: hidden; }
+  .pri .foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; }
+  .pri .ficha { padding: 9mm 8mm 8mm; display: flex; flex-direction: column; gap: 6mm; flex: 1; }
+  .pri .ficha .nombre { font-family: 'Playfair Display', serif; font-size: 25pt; line-height: 1.05; letter-spacing: .01em; }
+  .pri .ficha .nombre small { display: block; font-family: 'Jost', sans-serif; font-size: 8.5pt; letter-spacing: .14em; text-transform: uppercase; color: var(--nude); margin-top: 3mm; }
+  .pri .ficha .firma { font-family: 'Sacramento', cursive; font-size: 24pt; color: var(--nude); line-height: 1; }
+  .pri .ficha dl { font-size: 8.6pt; line-height: 1.5; display: grid; gap: 3.2mm; }
+  .pri .ficha dt { font-size: 7pt; letter-spacing: .16em; text-transform: uppercase; color: var(--nude); }
+  .pri .ficha dd { color: var(--crema); }
+  .pri .ficha .contacto { margin-top: auto; border-top: 1px solid rgba(231,168,167,.45); padding-top: 4mm; }
+
+  .pri .cuerpo { padding: 10mm 12mm 9mm 11mm; display: flex; flex-direction: column; gap: 5.2mm; }
+  .pri .cabecera { display: flex; justify-content: space-between; align-items: flex-start; }
+  .pri .cabecera .gala { font-size: 7pt; letter-spacing: .16em; text-transform: uppercase; color: var(--vino); line-height: 1.6; }
+  .pri .cabecera .gala span { color: var(--ciruela); opacity: .7; }
+  .pri .logo { width: 42mm; background: var(--lino); border-radius: 4mm; padding: 2mm 3mm; }
+  .pri h1 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 25pt; line-height: 1.12; color: var(--vino); text-transform: lowercase; letter-spacing: .005em; margin-top: 1mm; }
+  .pri .linea { width: 22mm; height: 2px; background: var(--nude); border-radius: 2px; }
+  .pri p { font-size: 9.6pt; line-height: 1.62; }
+  .pri h2 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 13pt; color: var(--ciruela); text-transform: lowercase; margin-bottom: 2.5mm; }
+  .pri .proyectos { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+  .pri .proyecto { background: var(--lino); border: 1px solid var(--arena); border-radius: 4mm; padding: 3.6mm 4mm; }
+  .pri .proyecto .tag { font-size: 6.6pt; letter-spacing: .16em; text-transform: uppercase; color: var(--vino); }
+  .pri .proyecto h3 { font-family: 'Playfair Display', serif; font-weight: 400; font-size: 12pt; margin: .8mm 0 1.2mm; }
+  .pri .proyecto p { font-size: 8.3pt; line-height: 1.5; }
+  .pri .pilares { display: flex; gap: 2mm; flex-wrap: wrap; }
+  .pri .pilares span { font-size: 8pt; border: 1px solid var(--ciruela); border-radius: 999px; padding: 1.2mm 3.4mm; }
+  .pri .aporte { background: var(--arena); border-radius: 4mm; padding: 4.5mm 5mm; }
+  .pri .aporte p { font-size: 9pt; }
+  .pri .prensa { margin-top: auto; }
+  .pri .prensa .etq { font-size: 6.8pt; letter-spacing: .16em; text-transform: uppercase; color: var(--vino); margin-bottom: 2.6mm; }
+  .pri .medios { display: flex; align-items: center; justify-content: space-between; gap: 2.4mm; }
+  .pri .medios img { height: 4.2mm; max-width: 22mm; object-fit: contain; width: auto; filter: grayscale(1) brightness(.35) sepia(.35); opacity: .8; }
+  .pri .medios img.alto { height: 7mm; }
+
+  /* ============ PÁGINA 2 · ALEXA (identidad de su web: violeta, Oswald) ============ */
+  .alexa {
+    --fondo:#FBF7FB; --lila:#ECD4E5; --lila-suave:#F5EAF2; --violeta:#975BA0;
+    --violeta-hondo:#6B2C80; --tinta:#2F1F36; --cafe:#3A2621;
+    background: var(--fondo); color: var(--tinta);
+    font-family: 'Josefin Sans', sans-serif; font-weight: 400;
+    grid-template-columns: 1fr 74mm;
+  }
+  .alexa .cuerpo { padding: 10mm 11mm 9mm 12mm; display: flex; flex-direction: column; gap: 5mm; }
+  .alexa .cabecera { display: flex; justify-content: space-between; align-items: flex-start; gap: 4mm; }
+  .alexa .cabecera .gala { flex: 1; white-space: nowrap; }
+  .alexa .gala { font-size: 7pt; letter-spacing: .16em; text-transform: uppercase; color: var(--violeta); line-height: 1.6; }
+  .alexa .gala span { color: var(--tinta); opacity: .7; }
+  .alexa .marca { text-align: right; }
+  .alexa .marca .wm { font-family: 'Oswald', sans-serif; font-weight: 600; font-size: 17pt; letter-spacing: .06em; color: var(--violeta); line-height: 1; }
+  .alexa .marca .sub { font-size: 7.4pt; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta); margin-top: 1.4mm; }
+  .alexa .marca .sub b { font-weight: 400; display: inline-block; background: var(--cafe); color: #fff; border-radius: 999px; padding: .8mm 2.6mm .4mm; margin-left: 1mm; }
+  .alexa h1 { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 24pt; line-height: 1.12; color: var(--violeta-hondo); text-transform: uppercase; letter-spacing: .01em; margin-top: 1mm; }
+  .alexa .linea { width: 22mm; height: 3px; background: var(--violeta); border-radius: 2px; }
+  .alexa p { font-size: 9.8pt; line-height: 1.6; }
+  .alexa h2 { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 11.5pt; letter-spacing: .08em; text-transform: uppercase; color: var(--violeta); margin-bottom: 2.4mm; }
+  .alexa .temas { display: flex; flex-wrap: wrap; gap: 1.8mm; }
+  .alexa .temas span { font-size: 8.2pt; background: var(--lila-suave); color: var(--tinta); border-radius: 999px; padding: 1.4mm 3.4mm 1mm; }
+  .alexa .obra { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; }
+  .alexa .pieza { background: #fff; border: 1px solid var(--lila); border-radius: 4mm; padding: 3mm 3.4mm 3.4mm; display: flex; flex-direction: column; }
+  .alexa .pieza img { height: 44mm; width: 100%; object-fit: contain; margin-bottom: 2mm; }
+  .alexa .pieza .tipo { font-size: 6.6pt; letter-spacing: .16em; text-transform: uppercase; color: var(--violeta); }
+  .alexa .pieza h3 { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 11pt; text-transform: uppercase; letter-spacing: .03em; margin: .6mm 0 1mm; color: var(--tinta); }
+  .alexa .pieza p { font-size: 8pt; line-height: 1.45; }
+  .alexa .podcast-visual { height: 44mm; margin-bottom: 2mm; border-radius: 3mm; background: var(--violeta); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 2mm; }
+  .alexa .podcast-visual .k { font-size: 6.6pt; letter-spacing: .16em; text-transform: uppercase; opacity: .85; }
+  .alexa .podcast-visual .t { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 12pt; line-height: 1.1; text-transform: uppercase; margin-top: 1mm; }
+  .alexa .aporte { background: var(--lila-suave); border-left: 3px solid var(--violeta); border-radius: 0 4mm 4mm 0; padding: 4.5mm 5mm; margin-top: auto; }
+  .alexa .aporte p { font-size: 9pt; }
+
+  .alexa .lateral { background: var(--violeta-hondo); color: #fff; display: flex; flex-direction: column; }
+  .alexa .foto { height: 150mm; overflow: hidden; }
+  .alexa .foto img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 50%; }
+  .alexa .ficha { padding: 9mm 8mm 8mm; display: flex; flex-direction: column; gap: 6mm; flex: 1; }
+  .alexa .ficha .nombre { font-family: 'Oswald', sans-serif; font-weight: 500; font-size: 24pt; line-height: 1.05; text-transform: uppercase; letter-spacing: .03em; }
+  .alexa .ficha .nombre small { display: block; font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 8.5pt; letter-spacing: .14em; color: var(--lila); margin-top: 3mm; }
+  .alexa .ficha blockquote { font-size: 10pt; line-height: 1.5; color: #fff; border-left: 2px solid var(--lila); padding-left: 3.4mm; }
+  .alexa .ficha dl { font-size: 8.6pt; line-height: 1.5; display: grid; gap: 3.2mm; }
+  .alexa .ficha dt { font-size: 7pt; letter-spacing: .16em; text-transform: uppercase; color: var(--lila); }
+  .alexa .ficha .contacto { margin-top: auto; border-top: 1px solid rgba(236,212,229,.45); padding-top: 4mm; }
+</style>
+</head>
+<body>
+
+<!-- ===================== PÁGINA 1 · PRI ===================== -->
+<section class="page pri">
+  <aside class="lateral">
+    <div class="foto"><img src="img/pri.jpg" alt="Retrato de Pri dos Santos"></div>
+    <div class="ficha">
+      <div class="nombre">Pri dos Santos<small>Priscila dos Santos</small></div>
+      <dl>
+        <div><dt>Origen</dt><dd>Brasileña, afincada en Gipuzkoa</dd></div>
+        <div><dt>Especialidad</dt><dd>Inteligencia emocional aplicada a madrastras y familias ensambladas</dd></div>
+        <div><dt>Hoy</dt><dd>Fundadora de Madrastra en Paz y presidenta de ASTRAS</dd></div>
+      </dl>
+      <dl class="contacto">
+        <div><dt>Correo</dt><dd>pri@somosmadrastras.com</dd></div>
+        <div><dt>Web</dt><dd>somosmadrastras.com</dd></div>
+        <div><dt>Instagram</dt><dd>@pri.madrastraenpaz · @pri.maternidad</dd></div>
+      </dl>
+    </div>
+  </aside>
+
+  <main class="cuerpo">
+    <div class="cabecera">
+      <div class="gala">Gala de Premios Afrohispánica<br><span>Dosier · Pri y Alexa · 1/2</span></div>
+      <img class="logo" src="img/logo-madrastra-en-paz.png" alt="Madrastra en Paz">
+    </div>
+
+    <h1>para que ser madrastra deje de vivirse en soledad</h1>
+    <div class="linea"></div>
+
+    <p>Fui hijastra antes de ser madrastra, y después me convertí en madre. Esa trayectoria me permite mirar la familia ensamblada desde todos sus lugares: el de la niña que busca su sitio, el de la mujer que se enamora de alguien que ya tiene criaturas y el de la madre que aprende a conciliar mundos distintos.</p>
+    <p>Comunico, divulgo y acompaño para que las madrastras y las familias ensambladas tengan información, compañía y un lugar en la conversación pública. Mi trabajo se apoya en la comunicación no violenta, la inteligencia emocional y la crianza respetuosa.</p>
+
+    <div>
+      <h2>lo que hago</h2>
+      <div class="proyectos">
+        <div class="proyecto"><div class="tag">Acompañar</div><h3>Madrastra en Paz</h3><p>La comunidad de madrastras más grande en español: encuentros en directo, material práctico y un grupo donde no hace falta explicar el contexto.</p></div>
+        <div class="proyecto"><div class="tag">Presidenta</div><h3>ASTRAS</h3><p>La primera asociación de madrastras en España, que trabaja por el reconocimiento del rol y la protección de la infancia.</p></div>
+        <div class="proyecto"><div class="tag">Divulgar</div><h3>Contenido y podcast</h3><p>Redes sociales, el primer podcast para madrastras en España, una newsletter y los cuentos de Helu.</p></div>
+        <div class="proyecto"><div class="tag">Comunicar</div><h3>Charlas y formación</h3><p>Conferencias y talleres para centros educativos, instituciones, empresas y profesionales que trabajan con familias.</p></div>
+      </div>
+    </div>
+
+    <div class="pilares"><span>Comunicación no violenta</span><span>Inteligencia emocional</span><span>Crianza respetuosa</span></div>
+
+    <div class="aporte">
+      <h2>en la gala</h2>
+      <p>Me gustaría contar la noche desde dentro, dar a conocer a las personas premiadas y acercar vuestro trabajo a una comunidad de mujeres que confía en lo que comparto (también aquí, en el norte). Como invitada, como prensa o de la forma que consideréis más adecuada.</p>
+    </div>
+
+    <div class="prensa">
+      <div class="etq">Han hablado de mi trabajo</div>
+      <div class="medios">
+        <img src="img/prensa-telecinco.svg" alt="Telecinco">
+        <img src="img/prensa-elpais.png" alt="El País">
+        <img class="alto" src="img/prensa-hola.png" alt="¡Hola!">
+        <img class="alto" src="img/prensa-yodona.png" alt="Yo Dona">
+        <img src="img/prensa-elmundo.png" alt="El Mundo">
+        <img src="img/prensa-diario-vasco.png" alt="El Diario Vasco">
+      </div>
+    </div>
+  </main>
+</section>
+
+<!-- ===================== PÁGINA 2 · ALEXA ===================== -->
+<section class="page alexa">
+  <main class="cuerpo">
+    <div class="cabecera">
+      <div class="gala">Gala de Premios Afrohispánica<br><span>Dosier · Pri y Alexa · 2/2</span></div>
+      <div class="marca">
+        <div class="wm">ALEXA DACIER</div>
+        <div class="sub">Terapia online <b>Tu refugio terapéutico</b></div>
+      </div>
+    </div>
+
+    <h1>Un lugar seguro donde apoyarse cuando emocionalmente no se puede más</h1>
+    <div class="linea"></div>
+
+    <p>Alexa Dacier es psicóloga clínica, formada en terapia de pareja y sexología clínica, con formación específica en autoestima y gestión emocional. Acompaña en consulta online a mujeres que atraviesan rupturas, soledad, desamor o momentos de caos, y les ofrece un espacio seguro para reconstruirse.</p>
+    <p>Desde hace años escribe en su blog, Seguimos, donde publica cada semana sobre amor propio, relaciones y salud emocional con un lenguaje directo, honesto y cercano.</p>
+
+    <div>
+      <h2>Temas que trata</h2>
+      <div class="temas">
+        <span>Amor propio</span><span>Autoestima</span><span>Rupturas y duelo</span><span>Relaciones de pareja</span><span>Sexualidad</span><span>Soledad</span><span>Ansiedad</span><span>Salud mental</span><span>Vida adulta</span>
+      </div>
+    </div>
+
+    <div>
+      <h2>Libros y podcast</h2>
+      <div class="obra">
+        <div class="pieza"><img src="img/alexa-libro.jpg" alt="Portada de ¡Ahí no es!"><div class="tipo">Libro · 2022</div><h3>¡Ahí no es!</h3><p>Un libro para irte de donde no te quieren.</p></div>
+        <div class="pieza"><img src="img/alexa-quierete.jpg" alt="Portada de Quiérete"><div class="tipo">Libro · 2024</div><h3>Quiérete</h3><p>Un viaje para reencontrarte con tu amor propio.</p></div>
+        <div class="pieza"><div class="podcast-visual"><div class="k">En Spotify</div><div class="t">Hablemos con<br>Alexa Dacier</div></div><div class="tipo">Trabaja en ti</div><h3>Podcast</h3><p>Un espacio para sentirte acompañada.</p></div>
+      </div>
+    </div>
+
+    <div class="aporte">
+      <h2>En la gala</h2>
+      <p>Desde su mirada como psicóloga y divulgadora, Alexa puede contar la gala a su comunidad, poner voz a las historias de las personas premiadas y acercar el reconocimiento afrodescendiente a un público que busca referentes cercanos.</p>
+    </div>
+  </main>
+
+  <aside class="lateral">
+    <div class="foto"><img src="img/alexa.jpg" alt="Retrato de Alexa Dacier"></div>
+    <div class="ficha">
+      <div class="nombre">Alexa Dacier<small>Alexandra Dacier</small></div>
+      <blockquote>Mi único compromiso es acompañarte mientras tú misma te salvas.</blockquote>
+      <dl>
+        <div><dt>Profesión</dt><dd>Psicóloga clínica · Colegiada nº 30275</dd></div>
+        <div><dt>Base</dt><dd>Donostia, Gipuzkoa</dd></div>
+      </dl>
+      <dl class="contacto">
+        <div><dt>Web</dt><dd>seguimosalexadacier.com</dd></div>
+        <div><dt>Instagram</dt><dd>@alexadacier.psico</dd></div>
+      </dl>
+    </div>
+  </aside>
+</section>
+
+</body>
+</html>

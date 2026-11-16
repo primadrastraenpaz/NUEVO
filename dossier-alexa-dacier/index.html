@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alexa Dacier · Propuesta editorial</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --papel: #F6F3F6;      /* fondo maestro, blanco lavanda */
+    --lila-claro: #ECE3F1; /* bloques suaves */
+    --lila: #C7B0DA;       /* el lila de su ropa y sus libros */
+    --violeta: #7B4A98;    /* color que manda */
+    --tinta: #2B1836;      /* berenjena profunda, texto */
+    --gris: #6E6275;
+  }
+  @page { size: 1440px 810px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #cfc8d2; font-family: 'Manrope', sans-serif; color: var(--tinta); }
+  img { display: block; }
+
+  .slide {
+    width: 1440px; height: 810px; margin: 24px auto; position: relative; overflow: hidden;
+    background: var(--papel); box-shadow: 0 4px 30px rgba(43,24,54,.12);
+  }
+  @media print {
+    body { background: none; }
+    .slide { margin: 0; box-shadow: none; break-after: page; }
+    .slide:last-child { break-after: auto; }
+  }
+
+  /* Elementos comunes */
+  .num { position: absolute; bottom: 44px; right: 64px; font-family: 'Oswald'; font-weight: 300; font-size: 14px; letter-spacing: .2em; color: var(--gris); }
+  .firma { position: absolute; bottom: 44px; left: 72px; font-family: 'Oswald'; font-weight: 500; font-size: 12px; letter-spacing: .32em; text-transform: uppercase; color: var(--violeta); }
+  .titulo { font-family: 'Oswald', sans-serif; text-transform: uppercase; line-height: .98; letter-spacing: .02em; color: var(--tinta); }
+  .titulo .fino { font-weight: 200; display: block; }
+  .titulo .fuerte { font-weight: 600; display: block; color: var(--violeta); }
+  .eyebrow { font-family: 'Oswald'; font-weight: 500; font-size: 13px; letter-spacing: .34em; text-transform: uppercase; color: var(--violeta); }
+  .cita { font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400; color: var(--tinta); }
+  .linea { width: 56px; height: 2px; background: var(--lila); }
+  .foto { position: absolute; top: 0; bottom: 0; }
+  .foto img { width: 100%; height: 100%; object-fit: cover; }
+
+  /* 1 · Portada */
+  .s1 .foto { right: 0; width: 600px; }
+  .s1 .foto img { object-position: 50% 30%; }
+  .s1 .texto { position: absolute; left: 96px; top: 0; bottom: 0; width: 680px; display: flex; flex-direction: column; justify-content: center; }
+  .s1 .titulo { font-size: 128px; margin: 30px 0 40px; }
+  .s1 .titulo .fuerte { color: var(--tinta); }
+  .s1 .cita { font-size: 38px; line-height: 1.22; max-width: 600px; }
+  .s1 .cita em { color: var(--violeta); font-style: italic; }
+  .s1 .roles { margin-top: 44px; font-family: 'Oswald'; font-weight: 300; font-size: 16px; letter-spacing: .3em; text-transform: uppercase; color: var(--gris); }
+  .s1 .roles b { color: var(--lila); font-weight: 300; margin: 0 10px; }
+
+  /* 2 · Quién soy */
+  .s2 .foto { left: 0; width: 520px; }
+  .s2 .foto img { object-position: 50% 18%; }
+  .s2 .texto { position: absolute; left: 616px; right: 96px; top: 80px; }
+  .s2 .titulo { font-size: 76px; }
+  .s2 .nombre { margin-top: 40px; font-family: 'Oswald'; font-weight: 500; font-size: 22px; letter-spacing: .14em; text-transform: uppercase; }
+  .s2 .rol { font-size: 17px; color: var(--gris); margin-top: 6px; }
+  .s2 ul { list-style: none; margin-top: 30px; display: grid; gap: 14px; max-width: 640px; }
+  .s2 li { font-size: 17px; line-height: 1.5; padding-left: 28px; position: relative; }
+  .s2 li::before { content: ''; position: absolute; left: 0; top: 12px; width: 12px; height: 2px; background: var(--violeta); }
+  .s2 .cita { position: absolute; left: 616px; right: 120px; bottom: 80px; font-size: 28px; line-height: 1.25; border-left: 2px solid var(--lila); padding-left: 24px; }
+
+  /* 3 · Propuesta editorial */
+  .s3 .cabecera { position: absolute; left: 96px; top: 84px; right: 96px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .s3 .titulo { font-size: 72px; }
+  .s3 .cabecera .cita { font-size: 28px; max-width: 470px; text-align: right; line-height: 1.25; }
+  .s3 .obras { position: absolute; left: 96px; right: 96px; top: 320px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .s3 .obra .img { height: 210px; overflow: hidden; }
+  .s3 .obra .img img { width: 100%; height: 100%; object-fit: cover; }
+  .s3 .obra .n { font-family: 'Oswald'; font-weight: 200; font-size: 40px; color: var(--violeta); margin-top: 22px; line-height: 1; }
+  .s3 .obra h3 { font-family: 'Oswald'; font-weight: 500; font-size: 21px; letter-spacing: .04em; text-transform: uppercase; line-height: 1.2; margin-top: 10px; min-height: 52px; }
+  .s3 .obra p { font-size: 15.5px; line-height: 1.55; color: var(--gris); margin-top: 10px; }
+
+  /* 4 · Comunidad */
+  .s4 .bloque { position: absolute; left: 0; top: 0; bottom: 0; width: 560px; background: var(--lila-claro); display: flex; align-items: center; justify-content: center; }
+  .s4 .bloque img { width: 340px; border-radius: 18px; box-shadow: 0 20px 50px rgba(43,24,54,.22); }
+  .s4 .texto { position: absolute; left: 656px; right: 96px; top: 96px; }
+  .s4 .titulo { font-size: 64px; }
+  .s4 .cifra { margin-top: 56px; display: flex; align-items: baseline; gap: 22px; }
+  .s4 .cifra strong { font-family: 'Oswald'; font-weight: 300; font-size: 132px; line-height: .9; color: var(--violeta); }
+  .s4 .cifra span { font-size: 18px; line-height: 1.45; max-width: 260px; }
+  .s4 .dato { margin-top: 26px; font-size: 16px; color: var(--gris); }
+  .s4 .dato b { font-weight: 600; color: var(--tinta); }
+  .s4 .temas { margin-top: 40px; display: flex; flex-wrap: wrap; gap: 10px; max-width: 620px; }
+  .s4 .temas span { font-size: 14px; border: 1px solid var(--lila); border-radius: 999px; padding: 8px 18px; }
+  .s4 .cita { position: absolute; left: 656px; right: 110px; bottom: 96px; font-size: 27px; line-height: 1.28; }
+
+  /* 5 · Trayectoria */
+  .s5 .texto { position: absolute; left: 96px; top: 96px; width: 560px; }
+  .s5 .titulo { font-size: 66px; }
+  .s5 .cita { margin-top: 44px; font-size: 36px; line-height: 1.2; }
+  .s5 p { margin-top: 30px; font-size: 17px; line-height: 1.65; color: var(--gris); max-width: 520px; }
+  .s5 .logos { position: absolute; right: 96px; top: 50%; transform: translateY(-50%); width: 610px; background: #fff; border-radius: 6px; padding: 44px 40px; }
+  .s5 .logos img { width: 100%; filter: grayscale(1) contrast(1.05); mix-blend-mode: multiply; opacity: .78; }
+  .s5 .logos .eyebrow { margin-bottom: 26px; display: block; }
+
+  /* 6 · Por qué publicar */
+  .s6 .foto { right: 0; width: 560px; }
+  .s6 .foto img { object-position: 40% 50%; }
+  .s6 .texto { position: absolute; left: 96px; top: 96px; width: 680px; }
+  .s6 .titulo { font-size: 66px; }
+  .s6 ol { list-style: none; margin-top: 46px; display: grid; gap: 22px; counter-reset: r; }
+  .s6 li { counter-increment: r; display: grid; grid-template-columns: 64px 1fr; align-items: baseline; font-size: 18px; line-height: 1.5; }
+  .s6 li::before { content: '0' counter(r); font-family: 'Oswald'; font-weight: 200; font-size: 32px; color: var(--violeta); }
+  .s6 .ya { margin-top: 40px; display: flex; gap: 18px; align-items: center; }
+  .s6 .ya img { height: 92px; }
+  .s6 .ya span { font-size: 14px; color: var(--gris); line-height: 1.5; }
+  .s6 .ya span b { display: block; font-family: 'Oswald'; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; font-size: 12px; color: var(--violeta); }
+
+  /* 7 · Cierre */
+  .s7 { background: var(--tinta); color: var(--papel); }
+  .s7 .foto { left: 0; width: 600px; }
+  .s7 .foto img { filter: grayscale(1) contrast(1.05); object-position: 40% 50%; }
+  .s7 .texto { position: absolute; left: 700px; right: 96px; top: 0; bottom: 0; display: flex; flex-direction: column; justify-content: center; }
+  .s7 .cita { color: var(--papel); font-size: 40px; line-height: 1.22; }
+  .s7 .linea { margin: 48px 0 40px; }
+  .s7 .eyebrow { color: var(--lila); }
+  .s7 dl { margin-top: 26px; display: grid; gap: 20px; }
+  .s7 dt { font-family: 'Oswald'; font-weight: 300; font-size: 12px; letter-spacing: .3em; text-transform: uppercase; color: var(--lila); }
+  .s7 dd { font-size: 20px; margin-top: 4px; }
+  .s7 .num, .s7 .firma { color: var(--lila); }
+</style>
+</head>
+<body>
+
+<!-- 1 · PORTADA -->
+<section class="slide s1">
+  <div class="texto">
+    <div class="eyebrow">Propuesta editorial</div>
+    <h1 class="titulo"><span class="fino">Alexa</span><span class="fuerte">Dacier</span></h1>
+    <p class="cita">La vida no es Disney. <em>Y la psicología no debería fingir que lo es.</em></p>
+    <div class="roles">Psicóloga<b>·</b>Escritora<b>·</b>Divulgadora</div>
+  </div>
+  <div class="foto"><img src="img/escribiendo.jpg" alt="Alexa Dacier escribiendo"></div>
+</section>
+
+<!-- 2 · QUIÉN SOY -->
+<section class="slide s2">
+  <div class="foto"><img src="img/retrato-pie.jpg" alt="Retrato de Alexa Dacier"></div>
+  <div class="texto">
+    <h2 class="titulo"><span class="fino">Quién</span><span class="fuerte">soy</span></h2>
+    <div class="nombre">Alexa Dacier</div>
+    <div class="rol">Psicóloga, escritora y divulgadora · Donostia</div>
+    <ul>
+      <li>Psicóloga clínica, especializada en terapia de pareja y sexología. Colegiada nº&nbsp;30275.</li>
+      <li>Mujer negra y migrante: entiendo la psicología como una herramienta para comprender el sufrimiento y las condiciones que lo producen.</li>
+      <li>Una voz que une experiencia clínica, crítica social, feminismo y humor terapéutico.</li>
+      <li>Autora de ¡Ahí no es! (2022) y Quiérete (2024).</li>
+    </ul>
+  </div>
+  <p class="cita">«Escribo para que podamos comprendernos sin dejar de mirar el mundo en el que vivimos.»</p>
+  <div class="num">02</div>
+</section>
+
+<!-- 3 · PROPUESTA EDITORIAL -->
+<section class="slide s3">
+  <div class="cabecera">
+    <h2 class="titulo"><span class="fino">Propuesta</span><span class="fuerte">editorial</span></h2>
+    <p class="cita">Tres obras independientes, unidas por una misma mirada sobre la vida adulta.</p>
+  </div>
+  <div class="obras">
+    <article class="obra">
+      <div class="img"><img src="img/libro-disney.jpg" alt=""></div>
+      <div class="n">01</div>
+      <h3>Petronila, sal de Disney</h3>
+      <p>Un ensayo crítico con la industria del pensamiento positivo y con la idea de que todo se consigue con esfuerzo, autoestima y disciplina.</p>
+    </article>
+    <article class="obra">
+      <div class="img"><img src="img/libro-crisis.jpg" alt=""></div>
+      <div class="n">02</div>
+      <h3>Para cuando no sepas qué hacer contigo (ni con tu vida)</h3>
+      <p>Una obra íntima y práctica sobre las crisis existenciales, la identidad, las decisiones y la sensación de haberse perdido.</p>
+    </article>
+    <article class="obra">
+      <div class="img"><img src="img/libro-amor.jpg" alt="" style="object-position:50% 30%"></div>
+      <div class="n">03</div>
+      <h3>Ya sané, ya aprendí a estar sola. ¿Ahora dónde coño está el amor?</h3>
+      <p>La otra cara del amor propio, para mujeres que quieren una relación sin tener que justificarse por desearla.</p>
+    </article>
+  </div>
+  <div class="num">03</div>
+</section>
+
+<!-- 4 · COMUNIDAD -->
+<section class="slide s4">
+  <div class="bloque"><img src="img/instagram.jpg" alt="Perfil de Instagram @alexadacier.psico"></div>
+  <div class="texto">
+    <h2 class="titulo"><span class="fino">Mi comunidad</span><span class="fuerte">digital</span></h2>
+    <div class="cifra"><strong>99,6 mil</strong><span>personas en Instagram conversando sobre salud mental y vida adulta</span></div>
+    <div class="dato"><b>@alexadacier.psico</b> · 2,3 millones de visualizaciones en los últimos 30 días</div>
+    <div class="temas"><span>Psicología</span><span>Vínculos</span><span>Feminismo</span><span>Conciencia de clase</span><span>Sexualidad</span><span>Maternidad</span><span>Desigualdad</span></div>
+  </div>
+  <p class="cita">Una comunidad que busca entender por qué vivir, amar y sostenerse puede resultar tan difícil.</p>
+  <div class="num">04</div>
+</section>
+
+<!-- 5 · TRAYECTORIA -->
+<section class="slide s5">
+  <div class="texto">
+    <h2 class="titulo"><span class="fino">Trayectoria</span><span class="fuerte">y colaboraciones</span></h2>
+    <p class="cita">La psicología también sucede fuera de las redes sociales.</p>
+    <p>Llevo la salud mental a espacios donde también se habla de derechos, racismo, migración, maternidad y vida cotidiana, porque el bienestar emocional depende de las condiciones en las que cada persona intenta sostener su vida.</p>
+  </div>
+  <div class="logos">
+    <span class="eyebrow">Han contado conmigo</span>
+    <img src="img/colaboraciones.png" alt="Sorginlore, Impact Hub Donostia, Médicos del Mundo, El Diario Vasco, SOS Racismo Gipuzkoa, ERES Gipuzkoa, Emakumeon Etxea Astigarraga">
+  </div>
+  <div class="num">05</div>
+</section>
+
+<!-- 6 · POR QUÉ PUBLICAR -->
+<section class="slide s6">
+  <div class="texto">
+    <h2 class="titulo"><span class="fino">¿Por qué publicar</span><span class="fuerte">mis libros?</span></h2>
+    <ol>
+      <li>Hay un público que quiere hablar de salud mental sin cargar con la responsabilidad de todo lo que le ocurre.</li>
+      <li>Una voz reconocible, con experiencia clínica, mirada crítica y humor.</li>
+      <li>Una comunidad digital consolidada, cercana a las 100.000 personas.</li>
+      <li>Tres proyectos con identidad propia y una trayectoria editorial previa.</li>
+    </ol>
+    <div class="ya">
+      <img src="img/publicado-ahi-no-es.jpg" alt="Portada de ¡Ahí no es!">
+      <img src="img/publicado-quierete.jpg" alt="Portada de Quiérete">
+      <span><b>Ya publicados</b>¡Ahí no es! (2022)<br>Quiérete (2024)</span>
+    </div>
+  </div>
+  <div class="foto"><img src="img/portada-escritorio.jpg" alt="Alexa Dacier trabajando en su escritorio"></div>
+</section>
+
+<!-- 7 · CIERRE Y CONTACTO -->
+<section class="slide s7">
+  <div class="foto"><img src="img/retrato-sonrisa.jpg" alt="Alexa Dacier"></div>
+  <div class="texto">
+    <p class="cita">«Quiero escribir los libros que nos habría gustado encontrar cuando descubrimos que la vida adulta era bastante más complicada de lo que nos habían contado.»</p>
+    <div class="linea"></div>
+    <div class="eyebrow">Gracias · Contacto</div>
+    <dl>
+      <div><dt>Instagram</dt><dd>@alexadacier.psico</dd></div>
+      <div><dt>Web</dt><dd>seguimosalexadacier.com</dd></div>
+      <div><dt>Enlaces</dt><dd>linktr.ee/alexadacier</dd></div>
+    </dl>
+  </div>
+  <div class="num">07</div>
+</section>
+
+</body>
+</html>

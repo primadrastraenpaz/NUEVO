@@ -62,9 +62,21 @@ Un exceso de contenido agobia y lleva a abandonar. Por eso el calendario es lige
 
 ### Recursos prácticos
 
+El foco del club está en la creación de contenido. Compartimos lo que nos ha funcionado, y lo que nos sigue funcionando, para que cada socia pueda aplicarlo en su propio negocio:
+
+- Estructuras de carrusel de Alexa: el formato con el que sus carruseles se han vuelto virales, explicado paso a paso y en plantillas descargables.
+- Estructuras de vídeo de Pri: los guiones de los reels que se han viralizado, desglosados (gancho, desarrollo y cierre) para adaptarlos a cada mensaje.
+- Asistente de IA propio: un asistente entrenado con nuestros métodos y estructuras, para que cada socia pueda crear ideas, guiones y textos con nuestra forma de trabajar.
 - Guiones de conversación por mensaje privado para cerrar clientas sin sonar agresivas.
-- Estructuras de ganchos actualizadas cada mes.
-- Plantillas de documentos y acuerdos para sus propios servicios.
+
+### Acompañamiento desde la experiencia
+
+Las dos acompañamos desde lo que hemos vivido emprendiendo, como mujeres migrantes y como madres:
+
+- Pri, desde la estrategia: lo que le ha funcionado y le sigue funcionando para crecer, captar clientas y alcanzar sus objetivos.
+- Alexa, desde lo emocional: su experiencia como emprendedora y como psicóloga, para sostener la culpa, el miedo y el cansancio que aparecen por el camino.
+
+Queremos que el club sea, además de un lugar de formación, un espacio de conexión y de recursos para crecer como mujeres y como madres, y para seguir adelante con nuestros objetivos.
 
 ### Red entre iguales
 

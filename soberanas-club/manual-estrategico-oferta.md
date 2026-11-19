@@ -41,6 +41,7 @@ Es la puerta de entrada, con una barrera económica baja. Responde a la soledad 
 Es el programa principal. Ayuda a crear, validar y vender una oferta en poco tiempo, trabajando a la vez la parte estratégica y la emocional.
 
 - Precio: 497 € para la cohorte fundadora (20 plazas), con un precio oficial de 997 € para las siguientes ediciones. También en 2 pagos de 275 €.
+- Evolución del precio: Doble Impacto es la oferta de ticket medio de la marca. A medida que se acumulen ediciones, casos reales de alumnas y prueba social, el precio podrá subir de forma progresiva, sin necesidad de crear un tercer nivel.
 - Qué incluye:
   - Acceso a Classroom: lecciones en vídeo de 5 a 10 minutos. Alexa trabaja la parte emocional (culpa, seguridad ante la cámara, síndrome de la impostora) y Pri, la estrategia (nicho, oferta, contenido, venta por mensaje directo y captación sin anuncios).
   - Estructuras de contenido: los guiones de los vídeos virales de Pri y el formato de carrusel de Alexa, en plantillas descargables, junto con un asistente de IA entrenado con su método.
